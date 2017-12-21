@@ -157,6 +157,7 @@ const gulpWcagAccessibilityPlugin = (options = {}) => {
 	function generateHtmls(accessReport) {
 		if (tempReportType === 'html') {
 			new HtmlReportsGenerator(gulpOptions, accessReport);
+			process.exit(0);
 		}
 	}
 
